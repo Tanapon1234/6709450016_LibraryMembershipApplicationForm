@@ -4,32 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>LibraryMembership</title>
   </head>
   <body>
     <main>
       <div class="box-form">
-        <img class="img-for-form" alt="handsome boy read a book" src="" />
-        <div>
+        <div
+          class="img-for-form"
+          role="img"
+          aria-label="handsome boy read a book"
+        ></div>
+        <div class="container-form">
           <h1>LibraryMembership</h1>
-          <form>
+          <form class="form-for-lib">
             <div>
-              <label for="full-name-thai">ชื่อ-นามสกุล</label>
+              <label for="full-name-thai">FullName-Thai</label>
               <input
                 id="full-name-thai"
                 type="text"
-                placeholder="ใส่ชื่อ และ นามสกุลของคุณ"
+                placeholder="Enter your FullName Thai"
                 name="full-name-thai"
                 required
               />
             </div>
 
             <div>
-              <label for="full-name-eng">Fullname</label>
+              <label for="full-name-eng">Fullname-Eng</label>
               <input
                 id="full-name-eng"
                 type="text"
-                placeholder="Enter your FullName"
+                placeholder="Enter your FullName Eng"
                 name="full-name-eng"
                 required
               />
@@ -129,20 +139,22 @@
                 id="yes"
                 name="receive_info"
                 value="yes"
+                class="fix-input"
                 required
               />
-              <label for="yes">yes</label>
+              <label for="yes" class="inline">yes</label>
 
               <input
                 type="radio"
                 id="no"
                 name="receive_info"
                 value="no"
+                class="fix-input"
                 required
               />
-              <label for="no">no</label>
+              <label for="no" class="inline">no</label>
             </div>
-            <button class="btn-send-form">Send</button>
+            <button class="btn-send-form btn--send--form">Send</button>
           </form>
         </div>
       </div>

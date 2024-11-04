@@ -1,1 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+main {
+  height: 900px;
+  align-content: center;
+  justify-items: center;
+  margin-top: 0.5rem;
+}
+.box-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(255, 255, 0);
+  justify-content: center;
+  align-items: center;
+  width: 100rem;
+  grid-gap: 2rem;
+  border-radius: 2rem;
+  overflow-x: hidden;
+}
 
+.container-form {
+  padding: 2rem;
+}
+.container-form h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.img-for-form {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(61, 61, 41, 0.35),
+      rgba(66, 55, 46, 0.35)
+    ),
+    url(https://png.pngtree.com/thumb_back/fh260/background/20221012/pngtree-students-standing-in-library-looking-at-book-reading-background-brown-hair-photo-image_7048216.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.inline {
+  display: inline !important;
+  margin-right: 1.5rem !important;
+}
+.fix-input {
+  width: 3% !important;
+  margin-right: 1px !important;
+}
+
+.form-for-lib label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.form-for-lib {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-for-lib input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-send-form {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-send-form:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
